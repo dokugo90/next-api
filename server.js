@@ -24,10 +24,15 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();});
 
-    mongoose.connect("mongodb://localhost:27017/nextjs", {
+    /*mongoose.connect("mongodb://localhost:27017/nextjs", {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+});*/
+
+mongoose.connect("mongodb+srv://dokugo:daber1010@cluster0.sc2ckht.mongodb.net/nextjs", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 
 const testSchema = new mongoose.Schema({
     text: {
