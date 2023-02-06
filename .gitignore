@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+/text.json
+
+# logs
+/logs
+
+# config files
+config.js
+
+# env files
+.env
