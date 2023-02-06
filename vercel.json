@@ -10,6 +10,10 @@
     ],
     "routes": [
         {
+            "src": "/",
+            "dest": "server.js"
+        },
+        {
             "src": "/data",
             "dest": "server.js"
         }

@@ -38,6 +38,12 @@ const testSchema = new mongoose.Schema({
 
 const testModel = mongoose.model("usersmsgs", testSchema)
 
+app.get("/", (req, res) => {
+    res.json({
+        "testing": "Successfully retrieved data"
+    })
+})
+
 app.get("/data", (req, res) => {
     testModel.find(function(err, data) {
         if (err) {
