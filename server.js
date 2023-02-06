@@ -61,7 +61,7 @@ app.get("/data", (req, res) => {
 })
 
 app.get("/user/63e17e47e13036ecc6dff5fb", (req, res) => {
-    testModel.find({ _id: req.params.id},function(err, data) {
+    testModel.find({ _id: '63e17e47e13036ecc6dff5fb'},function(err, data) {
         if (err) {
             console.log(err)
         } else {
