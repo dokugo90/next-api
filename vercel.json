@@ -18,8 +18,8 @@
             "dest": "server.js"
         },
         {
-            "src": "/src/pages/data/[id].js",
-            "dest": "server.js"
+            "src": "/data/(.*)",
+            "dest": "http://next-api-blush-five.vercel.app/data/$1"
         }
       ]
   }
