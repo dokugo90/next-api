@@ -71,6 +71,19 @@ app.get("/data/:id", (req, res) => {
     })
 })
 
+app.post("/create", (req, res) => {
+    testModel.create({
+        text: req.body.text
+    }, (err, success) => {
+        if (err) {
+            res.send("Error saving data")
+        } else {
+            res.send("")
+            console.log("Added Data")
+        }
+    })
+})
+
 app.listen(process.env.PORT || 5000);
 
 module.exports = app
