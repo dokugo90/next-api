@@ -18,7 +18,7 @@
             "dest": "server.js"
         },
         {
-            "src": "/user/:id",
+            "src": "/src/pages/data/[id].js",
             "dest": "server.js"
         }
       ]

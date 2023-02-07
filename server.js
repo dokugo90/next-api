@@ -60,7 +60,7 @@ app.get("/data", (req, res) => {
     })
 })
 
-app.get("/user/:id", (req, res) => {
+app.get("/data/:id", (req, res) => {
     testModel.find({ _id: req.params.id},function(err, data) {
         if (err) {
             console.log(err)
