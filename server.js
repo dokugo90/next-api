@@ -71,9 +71,9 @@ app.get("/data/:id", (req, res) => {
     })
 })
 
-app.post("/create", (req, res) => {
+app.post("/create/:text", (req, res) => {
     testModel.create({
-        text: req.body.text
+        text: req.params.text
     }, (err, success) => {
         if (err) {
             res.send("Error saving data")
