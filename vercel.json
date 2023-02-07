@@ -19,7 +19,7 @@
         },
         {
             "src": "/data/(.*)",
-            "dest": "http://next-api-blush-five.vercel.app/data/$1"
+            "dest": "server.js"
         }
       ]
   }
