@@ -22,7 +22,7 @@
             "dest": "server.js"
         },
         {
-          "src": "/create/(.*)",
+          "src": "/create",
           "dest": "server.js"
         }
       ]

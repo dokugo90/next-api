@@ -71,14 +71,14 @@ app.get("/data/:id", (req, res) => {
     })
 })
 
-app.post("/create/:text", (req, res) => {
+app.post("/create", (req, res) => {
     testModel.create({
-        text: req.params.text
+        text: req.body.text
     }, (err, success) => {
         if (err) {
             res.send("Error saving data")
         } else {
-            res.send("")
+            res.json(success)
             console.log("Added Data")
         }
     })
